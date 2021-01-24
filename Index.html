@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\This-PC\Documents\New WP\JS\Vanilla JS\Bg Changer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Background Changer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="BUTTON-CLASS">
+        <button class="button">Try It Out</button>
+      </div>
+    </div>
+
+    <script>
+      const button = document.querySelector('button');
+      const body = document.querySelector('body');
+      const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple', '#E97171', '#FF7e67', '#68b0ab', '#d2e603', '#7d0633', '#557571', '#a3d2ca', '#6f4a8e', 'ebd4d4'];
+
+      body.style.backgroundColor = '#a3d8f4';
+      button.addEventListener('click', changeBackground);
+
+      function changeBackground(){
+        const colorIndex= parseInt(Math.random()*colors.length);
+        document.body.style.backgroundColor = colors[colorIndex];
+      }
+    </script>
+  </body>
+</html>
