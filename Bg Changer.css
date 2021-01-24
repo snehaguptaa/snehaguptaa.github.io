@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .BUTTON-CLASS {
+    margin-top: 40vh;  /*Centering button */
+}
+button{
+    padding: 20px;
+    border-radius: 3px;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 5px 9px #193047;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+button6:active{
+    top:0.1em;
+}
